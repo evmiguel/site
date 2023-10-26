@@ -1,9 +1,13 @@
-FROM nginx:1.25.3-alpine
+FROM python:3.12.0-alpine
 
-# I know this is not best practice
-# TODO: make this into a configuration
-COPY index.html /usr/share/nginx/html
-COPY styles.css /usr/share/nginx/html
+EXPOSE 8000
+
+RUN mkdir /www
+
+COPY index.html /www
+COPY styles.css /www
+
+WORKDIR /www
 
 # Turn daemon off so we can see the logs
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["python", "-m", "http.server"]
