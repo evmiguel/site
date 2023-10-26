@@ -2,13 +2,12 @@ body { min-height: 100%; }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) 1fr;
     grid-template-rows: 1.9fr .1fr;
     min-height: 100vh;
     grid-template-areas: 
     "body links"
     "footer footer";
-    justify-items: stretch;
 }
 
 .welcome {
@@ -41,7 +40,6 @@ footer {
 span {
     opacity: 0;
     transition: all 1s ease;
-    transform: translateY(50px);
 }
 
 span.fade {

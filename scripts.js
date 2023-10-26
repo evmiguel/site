@@ -1,11 +1,18 @@
-const heading = document.querySelector('h1')
+const heading = document.querySelector('.welcome')
 const headingText = heading.textContent;
-const splitText = headingText.split("");
+console.log(headingText.trim())
+const splitText = headingText.trim().split('');
 heading.textContent = "";
 
 for (let i = 0; i < splitText.length; i++) {
-    heading.innerHTML += "<span>" + splitText[i] + "</span>";
+    if (splitText[i] === ' ') {
+        heading.innerHTML += "&nbsp"
+    } 
+    else {
+        heading.innerHTML += "<span>" + splitText[i] + "</span>";
+    }
 }
+    
 
 let char = 0;
 let timer = setInterval(onTick, 50);
