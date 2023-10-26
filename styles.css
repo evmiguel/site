@@ -71,12 +71,3 @@ footer {
     align-items: center;
     background-color: slategray;
 }
-
-span {
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-span.fade {
-    opacity: 1;
-}
