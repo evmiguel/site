@@ -4,7 +4,7 @@ version: '3'
 services:
   site:
     container_name: site
-    image: evmiguel/site:1.0
+    image: evmiguel/site:1.1
   nginx:
     container_name: nginx
     restart: unless-stopped
