@@ -25,7 +25,7 @@ export default function Component() {
               <div className='image-container'>
                 <Image className='headshot' src='/headshot.jpg' layout='fill' objectFit='contain' alt="Picture of Erika" />
               </div>
-              <p>Hello, I'm Erika. I'm a software engineer, DevOps geek, and tech generalist.</p>
+              <p className='introduction'>Hello, I'm Erika. I'm a software engineer, DevOps geek, and tech generalist.</p>
           </div>
           <div className='links'>
               <ul>

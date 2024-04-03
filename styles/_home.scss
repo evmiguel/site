@@ -19,8 +19,14 @@ ul {
             'links'
     }
 
-    .welcome .image-container {
-        top: 0;
+    .welcome {
+        .introduction {
+            padding: 3rem;
+        }
+
+        .image-container {
+            top: 0;
+        }
     }
 }
 
