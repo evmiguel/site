@@ -24,7 +24,7 @@
 .text {
 	width: 100%;
 	max-width: 72rem;
-	padding: 8.25rem 0;
+	padding: 8.25rem 0 0 0;
 	position: relative;
 	z-index: 1; // Pull text to the foreground to sit above <FeaturedImage />.
 }
@@ -33,6 +33,7 @@
 	line-height: 1.25;
 	font-size: 5rem;
 	color: var(--wpe--color--title);
+	margin-bottom: 2rem;
 
 	@media (max-width: $breakpoint-small) {
 		font-size: 3rem;
@@ -41,7 +42,8 @@
 
 .byline {
 	font-weight: var(--wpe--font-weight--medium);
-	font-size: 1.2rem;
+	font-size: 2rem;
+	color: var(--wpe--color--slate)
 }
 
 .image {

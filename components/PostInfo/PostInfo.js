@@ -1,6 +1,7 @@
 import { FormatDate } from '../../components';
 
 export default function PostInfo({ date, author, className }) {
+  console.log(author)
   if (!date && !author) {
     return null;
   }
