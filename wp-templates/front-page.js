@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useQuery, gql } from '@apollo/client';
 import * as MENUS from '../constants/menus';
 import { BlogInfoFragment } from '../fragments/GeneralSettings';
@@ -21,7 +22,10 @@ export default function Component() {
       <main>
         <div className='container'>
           <div className='welcome'>
-              <p>Hello, I'm Erika. I'm a software engineer and DevOps practicioner.</p>
+              <div className='image-container'>
+                <Image className='headshot' src='/headshot.jpg' layout='fill' objectFit='contain' alt="Picture of Erika" />
+              </div>
+              <p>Hello, I'm Erika. I'm a software engineer, DevOps geek, and tech generalist.</p>
           </div>
           <div className='links'>
               <ul>
@@ -31,9 +35,6 @@ export default function Component() {
                   <li><Link href="/blog">Blog</Link></li>
               </ul>
           </div>
-          <footer>
-            Thanks for stopping by!
-          </footer>
         </div>
       </main>
     </>

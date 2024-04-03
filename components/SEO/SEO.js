@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 /**
  * Provide SEO related meta tags to a page.
@@ -52,6 +53,7 @@ export default function SEO({ title, description, imageUrl, url }) {
             <meta property="twitter:url" content={url} />
           </>
         )}
+        <link href="https://fonts.googleapis.com/css?family=DM Sans:100,300,400,700,900" rel="stylesheet" />
       </Head>
     </>
   );
