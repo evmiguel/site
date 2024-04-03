@@ -3,11 +3,11 @@
     
     &__entry {
         font-size: 1.5rem;
-        &-title {
-            &-link:link,
-            &-link:visited {
+        &_title {
+            &_link:link,
+            &_link:visited {
                 text-decoration: none;
-                color: $color-links-default;
+                color: rgb(74, 95, 119);
             }
         }
     
