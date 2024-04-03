@@ -1,0 +1,20 @@
+.posts {
+    padding: 3rem;
+    
+    &__entry {
+        font-size: 1.5rem;
+        &-title {
+            &-link:link,
+            &-link:visited {
+                text-decoration: none;
+                color: $color-links-default;
+            }
+        }
+    
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid black;
+        }
+    }
+}

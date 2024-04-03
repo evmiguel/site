@@ -29,10 +29,10 @@ export default function Component() {
           </div>
           <div className='links'>
               <ul>
-                  <li><Link href="https://evm-resumes.s3.amazonaws.com/E_Miguel_Resume_10292023.pdf">Resume</Link></li>
-                  <li><Link href="https://github.com/evmiguel">Github</Link></li>
-                  <li><Link href="https://www.linkedin.com/in/evmiguel/">LinkedIn</Link></li>
-                  <li><Link href="/blog">Blog</Link></li>
+                  <li className="links__link"><Link href="https://evm-resumes.s3.amazonaws.com/E_Miguel_Resume_10292023.pdf"><a className='links__link-dest'>Resume</a></Link></li>
+                  <li className="links__link"><Link href="https://github.com/evmiguel"><a className='links__link-dest'>Github</a></Link></li>
+                  <li className="links__link"><Link href="https://www.linkedin.com/in/evmiguel/"><a className='links__link-dest'>LinkedIn</a></Link></li>
+                  <li className="links__link"><Link href="/blog"><a className='links__link-dest'>Blog</a></Link></li>
               </ul>
           </div>
         </div>
