@@ -20,19 +20,19 @@ export default function Component() {
     <>
       <SEO title={siteTitle} description={siteDescription} />
       <main>
-        <div className='container'>
-          <div className='welcome'>
-              <div className='image-container'>
-                <Image className='headshot' src='/headshot.jpg' layout='fill' objectFit='contain' alt="Picture of Erika" />
+        <div className='grid md:grid-cols-2 h-screen min-h-full'>
+          <div className='md:col-span-1 w-full mx-auto flex text-center flex-col justify-center items-center text-[2.5rem] text-white bg-slate-900'>
+              <div className='top-[3rem] w-2/4 h-2/4 relative mb-[4rem] top-[-7rem]'>
+                <Image className='clip-circle' src='/headshot.jpg' layout='fill' objectFit='contain' alt="Picture of Erika" />
               </div>
-              <p className='introduction'>Hello, I'm Erika. I'm a software engineer, DevOps geek, and tech generalist.</p>
+              <p className='top-0 p-12'>Hello, I'm Erika. I'm a software engineer, DevOps geek, and tech generalist.</p>
           </div>
-          <div className='links'>
-              <ul>
-                  <li className="links__link"><Link href="https://evm-resumes.s3.amazonaws.com/E_Miguel_Resume_10292023.pdf"><a className='links__link-dest'>Resume</a></Link></li>
-                  <li className="links__link"><Link href="https://github.com/evmiguel"><a className='links__link-dest'>Github</a></Link></li>
-                  <li className="links__link"><Link href="https://www.linkedin.com/in/evmiguel/"><a className='links__link-dest'>LinkedIn</a></Link></li>
-                  <li className="links__link"><Link href="/blog"><a className='links__link-dest'>Blog</a></Link></li>
+          <div className='md:col-span-1 my-auto'>
+              <ul className='self-center flex text-center justify-center flex-col'>
+                  <li className="p-[1.5rem]"><Link href="https://evm-resumes.s3.amazonaws.com/E_Miguel_Resume_10292023.pdf"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Resume</a></Link></li>
+                  <li className="p-[1.5rem]"><Link href="https://github.com/evmiguel"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Github</a></Link></li>
+                  <li className="p-[1.5rem]"><Link href="https://www.linkedin.com/in/evmiguel/"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>LinkedIn</a></Link></li>
+                  <li className="p-[1.5rem]"><Link href="/blog"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Blog</a></Link></li>
               </ul>
           </div>
         </div>
