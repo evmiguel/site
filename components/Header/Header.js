@@ -14,32 +14,8 @@ export default function Header({
   const [isNavShown, setIsNavShown] = useState(false);
 
   return (
-    <header className={cx('component')}>
-      <SkipNavigationLink />
-        <Container>
-          <div className={cx('navbar')}>
-            <div className={cx('brand')}>
-              <Link href="/">
-                <a className={cx('title')}>{title}</a>
-              </Link>
-              {description && <p className={cx('description')}>{description}</p>}
-            </div>
-            <button
-              type="button"
-              className={cx('nav-toggle')}
-              onClick={() => setIsNavShown(!isNavShown)}
-              aria-label="Toggle navigation"
-              aria-controls={cx('primary-navigation')}
-              aria-expanded={isNavShown}
-            >
-              ☰
-            </button>
-            <NavigationMenu
-              className={cx(['primary-navigation', isNavShown ? 'show' : undefined])}
-              menuItems={menuItems}
-            />
-        </div>
-      </Container>
+    <header className='bg-slate-900 h-24 text-white pt-8 pl-8 text-3xl'>
+      <Link href='/'><a>Erika Miguel</a></Link>
     </header>
   );
 }

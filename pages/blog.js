@@ -1,10 +1,14 @@
 import { gql } from '@apollo/client';
 import client from '../utils/apolloClient';
 import Posts from '../components/Posts';
+import { Header } from '../components';
 
 
 const Blog = ({ posts }) => {
-    return <Posts posts={posts} />
+    return <>
+      <Header></Header>
+      <Posts posts={posts} />
+    </>
 }
 
 export async function getStaticProps() {

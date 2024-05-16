@@ -5,6 +5,7 @@ import {
   ContentWrapper,
   EntryHeader,
   FeaturedImage,
+  Header,
   Main,
   NavigationMenu,
   SEO,
@@ -64,17 +65,16 @@ export default function Component(props) {
   const { generalSettings, headerMenuItems, footerMenuItems } =
     useFaustQuery(GET_LAYOUT_QUERY);
 
-  const { title: siteTitle, description: siteDescription } = generalSettings;
-  const primaryMenu = headerMenuItems?.nodes ?? [];
-  const footerMenu = footerMenuItems?.nodes ?? [];
+  const { description: siteDescription } = generalSettings;
   const { title, content, featuredImage, date, author } = post ?? {};
 
   return (
     <>
       <SEO
-        title={siteTitle}
+        title={title}
         description={siteDescription}
       />
+      <Header></Header>
       <Main>
         <>
           <EntryHeader
