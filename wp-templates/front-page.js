@@ -29,7 +29,7 @@ export default function Component() {
           </div>
           <div className='md:col-span-1 my-auto'>
               <ul className='self-center flex text-center justify-center flex-col'>
-                  <li className="p-[1.5rem]"><Link href="https://evm-resumes.s3.amazonaws.com/E_Miguel_Resume_10292023.pdf"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Resume</a></Link></li>
+                  <li className="p-[1.5rem]"><Link href="https://evm-resumes.s3.amazonaws.com/E_Miguel_Resume_06162024.pdf"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Resume</a></Link></li>
                   <li className="p-[1.5rem]"><Link href="https://github.com/evmiguel"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Github</a></Link></li>
                   <li className="p-[1.5rem]"><Link href="https://www.linkedin.com/in/evmiguel/"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>LinkedIn</a></Link></li>
                   <li className="p-[1.5rem]"><Link href="/blog"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Blog</a></Link></li>
