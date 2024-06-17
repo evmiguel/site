@@ -25,7 +25,7 @@ export default function Component() {
               <div className='top-[3rem] w-2/4 h-2/4 relative mb-[4rem] top-[-7rem]'>
                 <Image className='clip-circle' src='/headshot.jpg' layout='fill' objectFit='contain' alt="Picture of Erika" />
               </div>
-              <p className='top-0 p-12'>Hello, I'm Erika. I'm a software engineer, DevOps geek, and tech generalist.</p>
+              <p className='top-0 p-12'>Hello, I'm Erika. I'm a data analyst, software engineer, and DevOps enthusiast.</p>
           </div>
           <div className='md:col-span-1 my-auto'>
               <ul className='self-center flex text-center justify-center flex-col'>
