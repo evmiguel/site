@@ -25,11 +25,11 @@ export default function Component() {
               <div className='top-[3rem] w-2/4 h-2/4 relative mb-[4rem] top-[-7rem]'>
                 <Image className='clip-circle' src='/headshot.jpg' layout='fill' objectFit='contain' alt="Picture of Erika" />
               </div>
-              <p className='top-0 p-10'>Hello, I'm Erika. I am currently taking a break from technology to focus on tailoring and gender affirming clothing!</p>
+              <p className='top-0 p-10'>Hello, I'm Erika. I am a DevOps and Software Engineer with experience in the JavaScript stack, Python, and AWS.</p>
           </div>
           <div className='md:col-span-1 my-auto'>
               <ul className='self-center flex text-center justify-center flex-col'>
-                  <li className="p-[1.5rem]"><Link href="https://evm-resumes.s3.amazonaws.com/E_Miguel_Resume_06162024.pdf"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Resume</a></Link></li>
+                  <li className="p-[1.5rem]"><Link href="https://evm-resumes.s3.amazonaws.com/Erika_Miguel_Resume_Master.pdf"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Resume</a></Link></li>
                   <li className="p-[1.5rem]"><Link href="https://github.com/evmiguel"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Github</a></Link></li>
                   <li className="p-[1.5rem]"><Link href="https://www.linkedin.com/in/evmiguel/"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>LinkedIn</a></Link></li>
                   <li className="p-[1.5rem]"><Link href="/blog"><a className='text-gray-800 hover:text-black active:text-black hover:font-bold text-[2rem]'>Blog</a></Link></li>
